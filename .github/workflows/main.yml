@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add new der
-        uses: inerbyroman/test@master
+        uses: inerbyroman/test@main
         with:
           host: 178.128.201.166
           username: Roman
