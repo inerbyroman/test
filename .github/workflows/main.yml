@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy NodeJS app
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
         uses: inerbyroman/test@main # inerbyroman/test@main
         with:
           host: ${{secrets.MY_SECRET_HOST}} # IP address of the server you wish to ssh into
