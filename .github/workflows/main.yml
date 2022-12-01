@@ -11,9 +11,10 @@ jobs:
       - name: Add new der
         uses: inerbyroman/test@main
         with:
-          host: 178.128.201.166
-          username: Roman
-          key: ${{secrets.MY_SECRET_KEY}}
-          port: 22
-          script: |
-            ./test.sh
+          - uses: lowlighter/metrics@main
+            host: 178.128.201.166
+            username: Roman
+            key: ${{secrets.MY_SECRET_KEY}}
+            port: 22
+            script: |
+              ./test.sh
