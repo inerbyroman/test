@@ -1,7 +1,7 @@
 name: First Workflow
 on:
-push:
-branches: [master]
+  push:
+    branches: [master]
 
 jobs:
   job_one:
@@ -10,10 +10,10 @@ jobs:
     steps: 
      name: Add new der
      uses: inerbyroman/test@master
-      with:
-        host: 178.128.201.166
-        username: Roman
-        key: ${{secrets.MY_SECRET_KEY}}
-        port: 22
-        script: |
-          ./test.sh
+     with:
+      host: 178.128.201.166
+      username: Roman
+      key: ${{secrets.MY_SECRET_KEY}}
+      port: 22
+      script: |
+        ./test.sh
