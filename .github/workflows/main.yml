@@ -8,12 +8,11 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@main
       - name: Add new der
         uses: inerbyroman/test@main
         with:
           host: 178.128.201.166
-          username: Roman
+          username: root
           key: ${{secrets.MY_SECRET_KEY}}
           port: 22
           script: |
