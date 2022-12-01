@@ -7,6 +7,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Deploy NodeJS app
         uses: inerbyroman/test@main # inerbyroman/test@main
         with:
@@ -16,4 +17,3 @@ jobs:
 
           script: |
             mkdir test
-      - uses: actions/checkout@v3
