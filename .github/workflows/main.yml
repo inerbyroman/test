@@ -9,7 +9,7 @@ jobs:
     steps:
       # - uses: actions/checkout@v2
       - name: Deploy NodeJS app
-        uses: appleboy/ssh-action@master # inerbyroman/test@main
+        uses: appleboy/ssh-action@v0.1.4 # inerbyroman/test@main
         with:
           host: ${{secrets.MY_SECRET_HOST}} # IP address of the server you wish to ssh into
           key: ${{secrets.MY_SECRET_KEY}} # Private or public key of the server
