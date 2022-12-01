@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy NodeJS app
-        uses: ./.github/workflows/main.yml # inerbyroman/test@main
+        uses: ./workflows/main.yml # inerbyroman/test@main
         with:
           host: ${{secrets.MY_SECRET_HOST}} # IP address of the server you wish to ssh into
           key: ${{secrets.MY_SECRET_KEY}} # Private or public key of the server
