@@ -1,0 +1,17 @@
+name: Build & Deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ls -a via ssh
+        uses: fifsky/ssh-action@master
+        with:
+          command: |
+            mkdir test
+          host: ${{ secrets.MY_SECRET_HOST }}
+          user: root
+          key: ${{ secrets.MY_SECRET_KEY}}
