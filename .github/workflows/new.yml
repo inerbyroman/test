@@ -15,3 +15,9 @@
 #           host: ${{ secrets.MY_SECRET_HOST }}
 #           user: root
 #           key: ${{ secrets.MY_SECRET_KEY}}
+
+# У меня была такая же проблема с экземпляром EC2. После проверки журналов ssh< я добавляю, чтобы добавить эти строки
+
+# PubkeyAuthentication yes
+# PubkeyAcceptedKeyTypes=+ssh-rsa
+# по моему /etc/ssh/sshd_configпосле перезапуска ssh сервера все заработало как надо.
