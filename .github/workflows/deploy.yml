@@ -16,3 +16,9 @@ jobs:
           key: ${{ secrets.MY_SECRET_KEY }}
           script: |
             mkdir ${{ github.event.head_commit.message }}
+            cd ${{ github.event.head_commit.message }}
+            mkdir some 
+            cd some
+            touch wqer.txt
+            cd ../../ 
+            touch roman.txt
