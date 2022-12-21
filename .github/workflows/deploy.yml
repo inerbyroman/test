@@ -15,4 +15,4 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.MY_SECRET_KEY }}
           script: |
-            bash /update.sh
+            bash update.sh
