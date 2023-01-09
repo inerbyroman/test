@@ -15,7 +15,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.MY_SECRET_KEY }}
           script:
-            rsync -av --progress /root/addictive/comfido/addictiveBuilder/ /home/deploy/testR/test/test2/ --exclude .git --exclude .github
+            rsync -av --progress /home/deploy/testR/test/test/ /home/deploy/testR/test/test2/ --exclude .git --exclude .github
             cd ~/addictive/client/addictive-builder
             cd /home/deploy/testR/test/test2
             git add *
