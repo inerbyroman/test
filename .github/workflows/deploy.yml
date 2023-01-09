@@ -15,7 +15,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.MY_SECRET_KEY }}
           script: |
-            cd /home/testR/test/test
+            cd /home/deploy/testR/test/test
             git pull
             rsync -av --progress /home/deploy/testR/test/test/ /home/deploy/testR/test/test2/ --exclude .git --exclude .github
             cd /home/deploy/testR/test/test2
