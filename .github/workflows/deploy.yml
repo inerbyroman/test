@@ -20,5 +20,5 @@ jobs:
             rsync -av --progress /home/deploy/testR/test/test/ /home/deploy/testR/test/test2/ --exclude .git --exclude .github
             cd /home/deploy/testR/test/test2
             git add *
-            git commit - m "hy"
+            git commit - m "hys"
             git push
