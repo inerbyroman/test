@@ -15,7 +15,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.MY_SECRET_KEY }}
           script: |
-          cd test
+          cd ~/test
           echo "Enter the commit:"
           read commit
           echo "commit: $commit"
