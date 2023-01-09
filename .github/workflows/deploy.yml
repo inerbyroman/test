@@ -14,5 +14,6 @@ jobs:
           host: ${{ secrets.MY_SECRET_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.MY_SECRET_KEY }}
-          script: cd test
+          script: |
+          cd test
           mkdir testR
